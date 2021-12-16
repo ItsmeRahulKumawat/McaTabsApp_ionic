@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Enter your Name :</ion-label>
+    <ion-input placeholder="Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Enter your Email :</ion-label>
+    <ion-input placeholder="Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Enter your Age :</ion-label>
+    <ion-input placeholder="Age"></ion-input>
+  </ion-item>
+  
+  
+  <ion-item>
+    <ion-label>Rating</ion-label>
+    <ion-range min="0" max="5" step="1" snaps="true" ticks="true" pin="true" color="success"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Any Suggestions for us...</ion-label>
+    <br>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+  <br>
+  <ion-button expand="block" color="success" (click)="presentToast()">Submit</ion-button>
+
+</ion-content>
